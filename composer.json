@@ -1,6 +1,0 @@
-{
-    "require": {
-        "facebook/graph-sdk": "^5.1",
-        "ipinfo/ipinfo": "^2.3"
-    }
-}
