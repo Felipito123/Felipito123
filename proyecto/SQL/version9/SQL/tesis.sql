@@ -9,21 +9,21 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
-CREATE SCHEMA IF NOT EXISTS `id17192662_saludlosalamos` DEFAULT CHARACTER SET utf8 ;
+CREATE SCHEMA IF NOT EXISTS `bbnwbc1pb4vbzf13lgik` DEFAULT CHARACTER SET utf8 ;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`rol` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`rol` (
   `id_rol` INT(11) NOT NULL AUTO_INCREMENT,
   `nombre_rol` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id_rol`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`region` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`region` (
   `id_region` INT NOT NULL AUTO_INCREMENT,
   `nombre_region` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id_region`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`comuna` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`comuna` (
   `id_comuna` INT NOT NULL AUTO_INCREMENT,
   `id_region` INT NOT NULL,
   `nombre_comuna` VARCHAR(100) NOT NULL,
@@ -31,134 +31,134 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`comuna` (
   INDEX `fk_comuna_region1_idx` (`id_region` ASC),
   CONSTRAINT `fk_comuna_region1`
     FOREIGN KEY (`id_region`)
-    REFERENCES `id17192662_saludlosalamos`.`region` (`id_region`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`region` (`id_region`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`sector` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`sector` (
   `id_sector` INT NOT NULL AUTO_INCREMENT,
   `nombre_sector` VARCHAR(150) NOT NULL,
   PRIMARY KEY (`id_sector`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`unidad` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`unidad` (
   `id_unidad` INT NOT NULL AUTO_INCREMENT,
   `nombre_unidad` VARCHAR(150) NOT NULL,
   PRIMARY KEY (`id_unidad`))
 DEFAULT CHARACTER SET = utf8;
 
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`cargo` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`cargo` (
   `id_cargo` INT NOT NULL AUTO_INCREMENT,
   `nombre_cargo` VARCHAR(150) NOT NULL,
   PRIMARY KEY (`id_cargo`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`etapas_spe` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`etapas_spe` (
   `id_etapas_spe` INT NOT NULL AUTO_INCREMENT,
   `descripcion_etapas_spe` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`id_etapas_spe`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`decision_spe` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`decision_spe` (
   `id_decision_spe` INT NOT NULL AUTO_INCREMENT,
   `descripcion_decision_spe` VARCHAR(150) NOT NULL,
   PRIMARY KEY (`id_decision_spe`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`motivo_pe` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`motivo_pe` (
   `id_mpe` INT NOT NULL AUTO_INCREMENT,
   `descripcion_mpe` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id_mpe`))
 DEFAULT CHARACTER SET = utf8;
 
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`tipo_remuneracion` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`tipo_remuneracion` (
   `id_tiporem` INT NOT NULL AUTO_INCREMENT,
   `descripcion_tiporem` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id_tiporem`))
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`tipo_dia` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`tipo_dia` (
   `id_tipo_dia` INT NOT NULL AUTO_INCREMENT,
   `descripcion_tipo_dia` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id_tipo_dia`))
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`decision_spa` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`decision_spa` (
   `id_decision_spa` INT NOT NULL AUTO_INCREMENT,
   `descripcion_decision_spa` VARCHAR(150) NOT NULL,
   PRIMARY KEY (`id_decision_spa`))
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`etapas_spa` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`etapas_spa` (
   `id_etapas_spa` INT NOT NULL AUTO_INCREMENT,
   `descripcion_etapas_spa` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`id_etapas_spa`))
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`institucion` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`institucion` (
   `id_institucion` INT NOT NULL AUTO_INCREMENT,
   `nombre_institucion` VARCHAR(70) NOT NULL,
   PRIMARY KEY (`id_institucion`))
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`area` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`area` (
   `id_area` INT NOT NULL AUTO_INCREMENT,
   `nombre_area` VARCHAR(70) NOT NULL,
   PRIMARY KEY (`id_area`))
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`nacionalidad` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`nacionalidad` (
   `id_nacionalidad` INT NOT NULL AUTO_INCREMENT,
   `nombre_nacionalidad` VARCHAR(60) NOT NULL,
   PRIMARY KEY (`id_nacionalidad`))
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`pueblos_indigenas` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`pueblos_indigenas` (
   `id_pueblos_indigenas` INT NOT NULL AUTO_INCREMENT,
   `nombre_pueblos_indigenas` VARCHAR(70) NOT NULL,
   PRIMARY KEY (`id_pueblos_indigenas`))
   DEFAULT CHARACTER SET = utf8;
 
-  CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`estado_resp_agenda` (
+  CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`estado_resp_agenda` (
   `id_estado_resp_agenda` INT NOT NULL AUTO_INCREMENT,
   `nombre_estado_agenda` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id_estado_resp_agenda`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`etapas_sfl` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`etapas_sfl` (
   `id_etapas_sfl` INT NOT NULL AUTO_INCREMENT,
   `descripcion_etapas_sfl` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`id_etapas_sfl`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`decision_sfl` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`decision_sfl` (
   `id_decision_sfl` INT NOT NULL AUTO_INCREMENT,
   `descripcion_decision_sfl` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id_decision_sfl`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`categoria_mb` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`categoria_mb` (
   `id_cat_mb` INT NOT NULL AUTO_INCREMENT,
   `nombre_cat_mb` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id_cat_mb`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`seguimiento_sl_mat_bg` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`seguimiento_sl_mat_bg` (
   `id_seg_sl_mat_bg` INT NOT NULL AUTO_INCREMENT,
   `estado_seg_mat_bg` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id_seg_sl_mat_bg`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`estado_mat_bodega` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`estado_mat_bodega` (
   `id_est_mat_bg` INT NOT NULL AUTO_INCREMENT,
   `nombre_est_mat_bg` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id_est_mat_bg`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`usuario` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`usuario` (
   `rut` VARCHAR(11) NOT NULL,
   `id_rol` INT NOT NULL,
   `id_comuna` INT NOT NULL,
@@ -184,32 +184,32 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`usuario` (
   INDEX `fk_usuario_unidad1_idx` (`id_unidad` ASC),
   CONSTRAINT `fk_usuario_rol0`
     FOREIGN KEY (`id_rol`)
-    REFERENCES `id17192662_saludlosalamos`.`rol` (`id_rol`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`rol` (`id_rol`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuario_comuna1`
     FOREIGN KEY (`id_comuna`)
-    REFERENCES `id17192662_saludlosalamos`.`comuna` (`id_comuna`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`comuna` (`id_comuna`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuario_sector1`
     FOREIGN KEY (`id_sector`)
-    REFERENCES `id17192662_saludlosalamos`.`sector` (`id_sector`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`sector` (`id_sector`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuario_cargo1`
     FOREIGN KEY (`id_cargo`)
-    REFERENCES `id17192662_saludlosalamos`.`cargo` (`id_cargo`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`cargo` (`id_cargo`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuario_unidad1`
     FOREIGN KEY (`id_unidad`)
-    REFERENCES `id17192662_saludlosalamos`.`unidad` (`id_unidad`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`unidad` (`id_unidad`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`historial_cargo` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`historial_cargo` (
   `id_historial_cargo` INT NOT NULL AUTO_INCREMENT,
   `id_rol` INT NOT NULL,
   `rut` VARCHAR(11) NOT NULL,
@@ -219,19 +219,19 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`historial_cargo` (
   INDEX `fk_rol_has_usuario_rol1_idx` (`id_rol` ASC),
   CONSTRAINT `fk_rol_has_usuario_rol1`
     FOREIGN KEY (`id_rol`)
-    REFERENCES `id17192662_saludlosalamos`.`rol` (`id_rol`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`rol` (`id_rol`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_rol_has_usuario_usuario1`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)    
   DEFAULT CHARACTER SET = utf8;
 
 
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`permiso_especial` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`permiso_especial` (
   `id_pe` INT NOT NULL AUTO_INCREMENT,
   `rut` VARCHAR(11) NOT NULL,
   `id_comuna` INT NOT NULL,
@@ -246,22 +246,22 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`permiso_especial` (
   INDEX `fk_permiso_especial_usuario1_idx` (`rut` ASC),
   CONSTRAINT `fk_solicitud_permiso_especial_comuna1`
     FOREIGN KEY (`id_comuna`)
-    REFERENCES `id17192662_saludlosalamos`.`comuna` (`id_comuna`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`comuna` (`id_comuna`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_solicitud_permiso_especial_motivo1`
     FOREIGN KEY (`id_mpe`)
-    REFERENCES `id17192662_saludlosalamos`.`motivo_pe` (`id_mpe`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`motivo_pe` (`id_mpe`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_permiso_especial_usuario1`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`solicitud_permiso_especial` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`solicitud_permiso_especial` (
   `id_spe` INT NOT NULL AUTO_INCREMENT,
   `id_pe` INT NOT NULL,
   `rut` VARCHAR(11) NOT NULL,
@@ -276,27 +276,27 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`solicitud_permiso_especi
   INDEX `fk_solicitud_permiso_especial_etapas_spe1_idx` (`id_etapas_spe` ASC) ,
   CONSTRAINT `fk_usuario_has_permiso_especial_usuario1`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuario_has_permiso_especial_permiso_especial1`
     FOREIGN KEY (`id_pe`)
-    REFERENCES `id17192662_saludlosalamos`.`permiso_especial` (`id_pe`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`permiso_especial` (`id_pe`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_solicitud_permiso_especial_decision1`
     FOREIGN KEY (`id_decision_spe`)
-    REFERENCES `id17192662_saludlosalamos`.`decision_spe` (`id_decision_spe`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`decision_spe` (`id_decision_spe`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_solicitud_permiso_especial_etapas_spe1`
     FOREIGN KEY (`id_etapas_spe`)
-    REFERENCES `id17192662_saludlosalamos`.`etapas_spe` (`id_etapas_spe`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`etapas_spe` (`id_etapas_spe`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`permiso_administrativo` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`permiso_administrativo` (
   `id_pa` INT NOT NULL AUTO_INCREMENT,
   `rut_solicitante` VARCHAR(11) NOT NULL,
   `rut_reemplazo` VARCHAR(11) NOT NULL,
@@ -315,28 +315,28 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`permiso_administrativo` 
   INDEX `fk_permiso_administrativo_usuario2_idx` (`rut_reemplazo` ASC),
   CONSTRAINT `fk_permiso_administrativo_tipo_remuneracion1`
     FOREIGN KEY (`id_tiporem`)
-    REFERENCES `id17192662_saludlosalamos`.`tipo_remuneracion` (`id_tiporem`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`tipo_remuneracion` (`id_tiporem`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_permiso_administrativo_tipo_dia1`
     FOREIGN KEY (`id_tipo_dia`)
-    REFERENCES `id17192662_saludlosalamos`.`tipo_dia` (`id_tipo_dia`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`tipo_dia` (`id_tipo_dia`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_permiso_administrativo_usuario1`
     FOREIGN KEY (`rut_solicitante`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_permiso_administrativo_usuario2`
     FOREIGN KEY (`rut_reemplazo`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`solicitud_permiso_administrativo` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`solicitud_permiso_administrativo` (
   `id_spa` INT NOT NULL AUTO_INCREMENT,
   `id_pa` INT NOT NULL,
   `rut_receptor` VARCHAR(11) NOT NULL,
@@ -351,28 +351,28 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`solicitud_permiso_admini
   INDEX `fk_solicitud_permiso_administrativo_permiso_administrativo1_idx` (`id_pa` ASC),
   CONSTRAINT `fk_solicitud_permiso_administrativo_usuario1`
     FOREIGN KEY (`rut_receptor`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_solicitud_permiso_administrativo_decision_spa1`
     FOREIGN KEY (`id_decision_spa`)
-    REFERENCES `id17192662_saludlosalamos`.`decision_spa` (`id_decision_spa`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`decision_spa` (`id_decision_spa`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_solicitud_permiso_administrativo_etapas_spa1`
     FOREIGN KEY (`id_etapas_spa`)
-    REFERENCES `id17192662_saludlosalamos`.`etapas_spa` (`id_etapas_spa`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`etapas_spa` (`id_etapas_spa`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_solicitud_permiso_administrativo_permiso_administrativo1`
     FOREIGN KEY (`id_pa`)
-    REFERENCES `id17192662_saludlosalamos`.`permiso_administrativo` (`id_pa`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`permiso_administrativo` (`id_pa`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
     DEFAULT CHARACTER SET = utf8;
 
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`permiso_feriado_legal` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`permiso_feriado_legal` (
   `id_pfl` INT NOT NULL AUTO_INCREMENT,
   `rut_solicitante` VARCHAR(11) NOT NULL,
   `rut_reemplazo` VARCHAR(11) NOT NULL,
@@ -389,17 +389,17 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`permiso_feriado_legal` (
   INDEX `fk_permiso_feriado_legal_usuario2_idx` (`rut_reemplazo` ASC),
   CONSTRAINT `fk_permiso_feriado_legal_usuario1`
     FOREIGN KEY (`rut_solicitante`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_permiso_feriado_legal_usuario2`
     FOREIGN KEY (`rut_reemplazo`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`autoriza` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`autoriza` (
   `id_autoriza` INT NOT NULL AUTO_INCREMENT,
   `id_pfl` INT NULL,
   `desde` DATE NOT NULL,
@@ -408,12 +408,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`autoriza` (
   INDEX `fk_autoriza_permiso_feriado_legal1_idx` (`id_pfl` ASC),
   CONSTRAINT `fk_autoriza_permiso_feriado_legal1`
     FOREIGN KEY (`id_pfl`)
-    REFERENCES `id17192662_saludlosalamos`.`permiso_feriado_legal` (`id_pfl`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`permiso_feriado_legal` (`id_pfl`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`prorroga` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`prorroga` (
   `id_prorroga` INT NOT NULL AUTO_INCREMENT,
   `id_pfl` INT NULL,
   `desde` DATE NOT NULL,
@@ -422,12 +422,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`prorroga` (
   INDEX `fk_prorroga_permiso_feriado_legal1_idx` (`id_pfl` ASC),
   CONSTRAINT `fk_prorroga_permiso_feriado_legal1`
     FOREIGN KEY (`id_pfl`)
-    REFERENCES `id17192662_saludlosalamos`.`permiso_feriado_legal` (`id_pfl`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`permiso_feriado_legal` (`id_pfl`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`solicitud_feriado_legal` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`solicitud_feriado_legal` (
   `id_sfl` INT NOT NULL AUTO_INCREMENT,
   `id_pfl` INT NOT NULL,
   `rut_receptor` VARCHAR(11) NOT NULL,
@@ -442,27 +442,27 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`solicitud_feriado_legal`
   INDEX `fk_solicitud_feriado_legal_usuario1_idx` (`rut_receptor` ASC),
   CONSTRAINT `fk_solicitud_feriado_legal_permiso_feriado_legal1`
     FOREIGN KEY (`id_pfl`)
-    REFERENCES `id17192662_saludlosalamos`.`permiso_feriado_legal` (`id_pfl`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`permiso_feriado_legal` (`id_pfl`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_solicitud_feriado_legal_etapas_sfl1`
     FOREIGN KEY (`id_etapas_sfl`)
-    REFERENCES `id17192662_saludlosalamos`.`etapas_sfl` (`id_etapas_sfl`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`etapas_sfl` (`id_etapas_sfl`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_solicitud_feriado_legal_decision_sfl1`
     FOREIGN KEY (`id_decision_sfl`)
-    REFERENCES `id17192662_saludlosalamos`.`decision_sfl` (`id_decision_sfl`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`decision_sfl` (`id_decision_sfl`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_solicitud_feriado_legal_usuario1`
     FOREIGN KEY (`rut_receptor`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`token` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`token` (
   `id_token` INT(11) NOT NULL AUTO_INCREMENT,
   `token_de_acceso` TEXT NOT NULL,
   `rut` VARCHAR(11) NOT NULL,
@@ -470,12 +470,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`token` (
   INDEX `fk_token_usuario1_idx` (`rut` ASC) ,
   CONSTRAINT `fk_token_usuario1`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`eventos` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`eventos` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `rut_creador` VARCHAR(11) NOT NULL,
   `title` VARCHAR(200) NOT NULL,
@@ -487,12 +487,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`eventos` (
   INDEX `fk_eventos_usuario1_idx` (`rut_creador` ASC) ,
   CONSTRAINT `fk_eventos_usuario1`
     FOREIGN KEY (`rut_creador`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
-  CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`destinatarios_eventos` (
+  CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`destinatarios_eventos` (
   `id_de` INT NOT NULL AUTO_INCREMENT,
   `rut_receptor` VARCHAR(11) NOT NULL,
   `id_eventos` INT NOT NULL,
@@ -501,18 +501,18 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`eventos` (
   INDEX `fk_usuario_has_eventos_usuario1_idx` (`rut_receptor` ASC),
   CONSTRAINT `fk_usuario_has_eventos_usuario1`
     FOREIGN KEY (`rut_receptor`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuario_has_eventos_eventos1`
     FOREIGN KEY (`id_eventos`)
-    REFERENCES `id17192662_saludlosalamos`.`eventos` (`id`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`eventos` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
 
-  CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`reunion` (
+  CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`reunion` (
   `id_reunion` INT(11) NOT NULL AUTO_INCREMENT,
   `codigo_reunion` VARCHAR(100) NOT NULL,
   `rut_creador` VARCHAR(11) NOT NULL,
@@ -527,12 +527,12 @@ DEFAULT CHARACTER SET = utf8;
   INDEX `fk_reunion_usuario1_idx` (`rut_creador` ASC),
   CONSTRAINT `fk_reunion_usuario1`
     FOREIGN KEY (`rut_creador`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
  DEFAULT CHARACTER SET = utf8;
 
- CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`destinatario_reunion` (
+ CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`destinatario_reunion` (
   `id_dr` INT NOT NULL AUTO_INCREMENT,
   `id_reunion` INT(11) NOT NULL,
   `rut_receptor` VARCHAR(11) NOT NULL,
@@ -541,18 +541,18 @@ DEFAULT CHARACTER SET = utf8;
   INDEX `fk_reunion_has_usuario_reunion1_idx` (`id_reunion` ASC),
   CONSTRAINT `fk_reunion_has_usuario_reunion1`
     FOREIGN KEY (`id_reunion`)
-    REFERENCES `id17192662_saludlosalamos`.`reunion` (`id_reunion`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`reunion` (`id_reunion`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_reunion_has_usuario_usuario1`
     FOREIGN KEY (`rut_receptor`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`calidad` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`calidad` (
   `id_calidad` INT(11) NOT NULL AUTO_INCREMENT,
   `rut` VARCHAR(11) NOT NULL,
   `descripcion_calidad` VARCHAR(50) NOT NULL,
@@ -562,12 +562,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`calidad` (
   INDEX `fk_calidad_usuario1_idx` (`rut` ASC) ,
   CONSTRAINT `fk_calidad_usuario1`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`galeria` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`galeria` (
   `id_galeria` INT(11) NOT NULL AUTO_INCREMENT,
   `rut` VARCHAR(11) NOT NULL,
   `archivo_galeria` VARCHAR(150) NOT NULL,
@@ -577,12 +577,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`galeria` (
   INDEX `fk_galeria_usuario1_idx` (`rut` ASC) ,
   CONSTRAINT `fk_galeria_usuario1`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`banner_imagenes` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`banner_imagenes` (
   `id_ban_imagenes` INT(11) NOT NULL AUTO_INCREMENT,
   `rut` VARCHAR(11) NOT NULL,
   `nombre_ban_imagenes` VARCHAR(150) NOT NULL,
@@ -592,12 +592,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`banner_imagenes` (
   INDEX `fk_ban_imagenes_usuario1_idx` (`rut` ASC) ,
   CONSTRAINT `fk_ban_imagenes_usuario1`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`banner_videos` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`banner_videos` (
   `id_ban_videos` INT(11) NOT NULL AUTO_INCREMENT,
   `rut` VARCHAR(11) NOT NULL,
   `nombre_ban_videos` VARCHAR(150) NOT NULL,
@@ -607,12 +607,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`banner_videos` (
   INDEX `fk_ban_imagenes_usuario1_idx` (`rut` ASC) ,
   CONSTRAINT `fk_ban_imagenes_usuario10`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`documentos` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`documentos` (
   `id_documentos` INT(11) NOT NULL AUTO_INCREMENT,
   `rut` VARCHAR(11) NOT NULL,
   `descripcion_documentos` VARCHAR(50) NOT NULL,
@@ -622,13 +622,13 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`documentos` (
   INDEX `fk_documentos_usuario1_idx` (`rut` ASC) ,
   CONSTRAINT `fk_documentos_usuario1`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`notificacion` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`notificacion` (
   `id_notificacion` INT(11) NOT NULL AUTO_INCREMENT,
   `rut` VARCHAR(11) NOT NULL,
   `mensaje_notificacion` VARCHAR(100) NOT NULL,
@@ -638,18 +638,18 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`notificacion` (
   INDEX `fk_notificacion_usuario1_idx` (`rut` ASC) ,
   CONSTRAINT `fk_notificacion_usuario1`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`categoria_articulo` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`categoria_articulo` (
   `id_categoria_articulo` INT(11) NOT NULL AUTO_INCREMENT,
   `nombre_categoria_articulo` VARCHAR(60) NOT NULL,
   PRIMARY KEY (`id_categoria_articulo`))
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`articulo` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`articulo` (
   `id_articulo` INT(11) NOT NULL AUTO_INCREMENT,
   `rut` VARCHAR(11) NOT NULL,
   `id_categoria_articulo` INT(11) NOT NULL,
@@ -663,17 +663,17 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`articulo` (
   INDEX `fk_articulo_categoria_articulo1_idx` (`id_categoria_articulo` ASC) ,
   CONSTRAINT `fk_articulo_usuario1`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_articulo_categoria_articulo1`
     FOREIGN KEY (`id_categoria_articulo`)
-    REFERENCES `id17192662_saludlosalamos`.`categoria_articulo` (`id_categoria_articulo`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`categoria_articulo` (`id_categoria_articulo`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`imagen_articulo` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`imagen_articulo` (
   `id_imagen_articulo` INT(11) NOT NULL AUTO_INCREMENT,
   `id_articulo` INT(11) NOT NULL,
   `nombre_imagen_articulo` VARCHAR(100) NOT NULL,
@@ -681,12 +681,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`imagen_articulo` (
   INDEX `fk_imagen_articulo_articulo1_idx` (`id_articulo` ASC) ,
   CONSTRAINT `fk_imagen_articulo_articulo1`
     FOREIGN KEY (`id_articulo`)
-    REFERENCES `id17192662_saludlosalamos`.`articulo` (`id_articulo`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`articulo` (`id_articulo`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`calificacion_articulo` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`calificacion_articulo` (
   `id_calificacion_articulo` INT(11) NOT NULL AUTO_INCREMENT,
   `id_articulo` INT(11) NOT NULL,
   `valor_calificacion_articulo` INT(11) NOT NULL,
@@ -700,12 +700,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`calificacion_articulo` (
   INDEX `fk_calificacion_articulo_articulo1_idx` (`id_articulo` ASC) ,
   CONSTRAINT `fk_calificacion_articulo_articulo1`
     FOREIGN KEY (`id_articulo`)
-    REFERENCES `id17192662_saludlosalamos`.`articulo` (`id_articulo`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`articulo` (`id_articulo`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`visitas_articulo` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`visitas_articulo` (
   `id_vis_art` INT NOT NULL AUTO_INCREMENT,
   `id_articulo` INT NOT NULL,
   `fecha_vis_art` DATE NOT NULL,
@@ -714,18 +714,18 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`visitas_articulo` (
   INDEX `fk_visitas_articulo_articulo1_idx` (`id_articulo` ASC),
   CONSTRAINT `fk_visitas_articulo_articulo1`
     FOREIGN KEY (`id_articulo`)
-    REFERENCES `id17192662_saludlosalamos`.`articulo` (`id_articulo`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`articulo` (`id_articulo`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`categoria_odonto` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`categoria_odonto` (
   `id_categoria_odonto` INT(11) NOT NULL AUTO_INCREMENT,
   `nombre_categoria_odonto` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id_categoria_odonto`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`articulo_odonto` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`articulo_odonto` (
   `id_articulo_odonto` INT(11) NOT NULL AUTO_INCREMENT,
   `rut` VARCHAR(11) NOT NULL,
   `titulo_articulo_odonto` VARCHAR(130) NOT NULL,
@@ -738,12 +738,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`articulo_odonto` (
   INDEX `fk_articulo_odonto_usuario1_idx` (`rut` ASC) ,
   CONSTRAINT `fk_articulo_odonto_usuario1`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`anexo_odonto` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`anexo_odonto` (
   `id_anexo_odonto` INT(11) NOT NULL AUTO_INCREMENT,
   `id_articulo_odonto` INT(11) NOT NULL,
   `id_categoria_odonto` INT(11) NOT NULL,
@@ -755,17 +755,17 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`anexo_odonto` (
   INDEX `fk_anexo_odonto_categoria_odonto1_idx` (`id_categoria_odonto` ASC) ,
   CONSTRAINT `fk_anexo_odonto_articulo_odonto1`
     FOREIGN KEY (`id_articulo_odonto`)
-    REFERENCES `id17192662_saludlosalamos`.`articulo_odonto` (`id_articulo_odonto`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`articulo_odonto` (`id_articulo_odonto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_anexo_odonto_categoria_odonto1`
     FOREIGN KEY (`id_categoria_odonto`)
-    REFERENCES `id17192662_saludlosalamos`.`categoria_odonto` (`id_categoria_odonto`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`categoria_odonto` (`id_categoria_odonto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`contacto` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`contacto` (
   `id_contacto` INT(11) NOT NULL AUTO_INCREMENT,
   `nombre_contacto` VARCHAR(50) NOT NULL,
   `correo_contacto` VARCHAR(100) NOT NULL,
@@ -776,7 +776,7 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`contacto` (
   PRIMARY KEY (`id_contacto`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`testimonios` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`testimonios` (
   `id_testimonios` INT NOT NULL AUTO_INCREMENT,
   `genero_testimonios` ENUM('F', 'M') NOT NULL,
   `nombre_testimonios` VARCHAR(150) NOT NULL,
@@ -785,25 +785,25 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`testimonios` (
 DEFAULT CHARACTER SET = utf8;
 
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`tipo_medicamento` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`tipo_medicamento` (
   `id_tipo_medicamento` INT NOT NULL AUTO_INCREMENT,
   `nombre_tipo_medicamento` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id_tipo_medicamento`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`categoria_medicamento` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`categoria_medicamento` (
   `id_categoria_medicamento` INT NOT NULL AUTO_INCREMENT,
   `nombre_categoria_medicamento` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id_categoria_medicamento`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`estado_medicamento` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`estado_medicamento` (
   `id_estado_medicamento` INT NOT NULL AUTO_INCREMENT,
   `nombre_estado_medicamento` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id_estado_medicamento`))
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`patologia` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`patologia` (
   `id_patologia` INT NOT NULL AUTO_INCREMENT,
   `nombre_patologia` VARCHAR(100) NOT NULL,
   `estado_patologia` ENUM ('0','1') DEFAULT '1' NOT NULL,
@@ -811,7 +811,7 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`patologia` (
 DEFAULT CHARACTER SET = utf8;
 
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`medicamento` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`medicamento` (
   `id_medicamento` INT NOT NULL AUTO_INCREMENT,
   `id_tipo_medicamento` INT NOT NULL,
   `id_categoria_medicamento` INT NOT NULL,
@@ -832,23 +832,23 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`medicamento` (
   INDEX `fk_medicamento_categoria_medicamento1_idx` (`id_categoria_medicamento` ASC),
   CONSTRAINT `fk_medicamento_usuario1`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_medicamento_tipo_medicamento1`
     FOREIGN KEY (`id_tipo_medicamento`)
-    REFERENCES `id17192662_saludlosalamos`.`tipo_medicamento` (`id_tipo_medicamento`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`tipo_medicamento` (`id_tipo_medicamento`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_medicamento_categoria_medicamento1`
     FOREIGN KEY (`id_categoria_medicamento`)
-    REFERENCES `id17192662_saludlosalamos`.`categoria_medicamento` (`id_categoria_medicamento`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`categoria_medicamento` (`id_categoria_medicamento`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`historial_medicamento` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`historial_medicamento` (
   `id_historial_medicamento` INT NOT NULL AUTO_INCREMENT,
   `id_medicamento` INT NOT NULL,
   `id_estado_medicamento` INT NOT NULL,
@@ -858,18 +858,18 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`historial_medicamento` (
   INDEX `fk_historial_medicamento_medicamento1_idx` (`id_medicamento` ASC),
   CONSTRAINT `fk_historial_medicamento_estado_medicamento1`
     FOREIGN KEY (`id_estado_medicamento`)
-    REFERENCES `id17192662_saludlosalamos`.`estado_medicamento` (`id_estado_medicamento`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`estado_medicamento` (`id_estado_medicamento`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_historial_medicamento_medicamento1`
     FOREIGN KEY (`id_medicamento`)
-    REFERENCES `id17192662_saludlosalamos`.`medicamento` (`id_medicamento`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`medicamento` (`id_medicamento`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`paciente` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`paciente` (
   `rut_paciente` VARCHAR(11) NOT NULL,
   `id_patologia` INT NOT NULL,
   `rut_funcionario` VARCHAR(11) NOT NULL,
@@ -886,18 +886,18 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`paciente` (
   INDEX `fk_paciente_usuario1_idx` (`rut_funcionario` ASC),
   CONSTRAINT `fk_paciente_patologia1`
     FOREIGN KEY (`id_patologia`)
-    REFERENCES `id17192662_saludlosalamos`.`patologia` (`id_patologia`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`patologia` (`id_patologia`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_paciente_usuario1`
     FOREIGN KEY (`rut_funcionario`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`agendar_retiro_medicamento` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`agendar_retiro_medicamento` (
   `id_retiro_med` INT NOT NULL AUTO_INCREMENT,
   `rut_paciente` VARCHAR(11) NOT NULL,
   `id_estado_resp_agenda` INT NOT NULL,
@@ -909,18 +909,18 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`agendar_retiro_medicamen
   INDEX `fk_agendar_retiro_medicamento_estado_resp_agenda1_idx` (`id_estado_resp_agenda` ASC),
   CONSTRAINT `fk_rertiro_medicamentos_paciente1`
     FOREIGN KEY (`rut_paciente`)
-    REFERENCES `id17192662_saludlosalamos`.`paciente` (`rut_paciente`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`paciente` (`rut_paciente`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_agendar_retiro_medicamento_estado_resp_agenda1`
     FOREIGN KEY (`id_estado_resp_agenda`)
-    REFERENCES `id17192662_saludlosalamos`.`estado_resp_agenda` (`id_estado_resp_agenda`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`estado_resp_agenda` (`id_estado_resp_agenda`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`solicitud_medicamento` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`solicitud_medicamento` (
   `id_solicitud_medicamento` INT NOT NULL AUTO_INCREMENT,
   `rut_paciente` VARCHAR(11) NOT NULL,
   `fecha_solicitud` DATETIME NOT NULL,
@@ -929,12 +929,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`solicitud_medicamento` (
   PRIMARY KEY (`id_solicitud_medicamento`),
   CONSTRAINT `fk_paciente_has_usuario_paciente1`
     FOREIGN KEY (`rut_paciente`)
-    REFERENCES `id17192662_saludlosalamos`.`paciente` (`rut_paciente`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`paciente` (`rut_paciente`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`historial_solicitud` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`historial_solicitud` (
   `id_historial_solicitud` INT NOT NULL AUTO_INCREMENT,
   `id_medicamento` INT NOT NULL,
   `id_solicitud_medicamento` INT NOT NULL,
@@ -946,17 +946,17 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`historial_solicitud` (
   PRIMARY KEY (`id_historial_solicitud`),
   CONSTRAINT `fk_medicamento_has_solicitud_medicamento_medicamento1`
     FOREIGN KEY (`id_medicamento`)
-    REFERENCES `id17192662_saludlosalamos`.`medicamento` (`id_medicamento`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`medicamento` (`id_medicamento`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_medicamento_has_solicitud_medicamento_solicitud_medicamento1`
     FOREIGN KEY (`id_solicitud_medicamento`)
-    REFERENCES `id17192662_saludlosalamos`.`solicitud_medicamento` (`id_solicitud_medicamento`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`solicitud_medicamento` (`id_solicitud_medicamento`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-    CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`libro_rsf` (
+    CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`libro_rsf` (
   `id_libro_rsf` INT NOT NULL AUTO_INCREMENT,
   `rut_solicitante` VARCHAR(14) NOT NULL,
   `rut_funcionario` VARCHAR(11) NULL,
@@ -992,32 +992,32 @@ DEFAULT CHARACTER SET = utf8;
   INDEX `fk_libro_rsf_usuario1_idx` (`rut_funcionario` ASC),
   CONSTRAINT `fk_libro_rsf_area1`
     FOREIGN KEY (`id_area`)
-    REFERENCES `id17192662_saludlosalamos`.`area` (`id_area`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`area` (`id_area`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_libro_rsf_institucion1`
     FOREIGN KEY (`id_institucion`)
-    REFERENCES `id17192662_saludlosalamos`.`institucion` (`id_institucion`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`institucion` (`id_institucion`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_libro_rsf_nacionalidad1`
     FOREIGN KEY (`id_nacionalidad`)
-    REFERENCES `id17192662_saludlosalamos`.`nacionalidad` (`id_nacionalidad`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`nacionalidad` (`id_nacionalidad`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_libro_rsf_pueblos_indigenas1`
     FOREIGN KEY (`id_pueblos_indigenas`)
-    REFERENCES `id17192662_saludlosalamos`.`pueblos_indigenas` (`id_pueblos_indigenas`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`pueblos_indigenas` (`id_pueblos_indigenas`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_libro_rsf_usuario1`
     FOREIGN KEY (`rut_funcionario`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
     DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`imagen_libro_rsf` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`imagen_libro_rsf` (
   `id_imagen_libro_rsf` INT NOT NULL AUTO_INCREMENT,
   `id_libro_rsf` INT NOT NULL,
   `nombre_imagen_libro_rsf` VARCHAR(50) NOT NULL,
@@ -1025,12 +1025,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`imagen_libro_rsf` (
   INDEX `fk_imagen_libro_rsf_libro_rsf1_idx` (`id_libro_rsf` ASC),
   CONSTRAINT `fk_imagen_libro_rsf_libro_rsf1`
     FOREIGN KEY (`id_libro_rsf`)
-    REFERENCES `id17192662_saludlosalamos`.`libro_rsf` (`id_libro_rsf`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`libro_rsf` (`id_libro_rsf`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
     DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`materiales_bodega` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`materiales_bodega` (
   `id_mb` INT NOT NULL AUTO_INCREMENT,
   `id_cat_mb` INT NOT NULL,
   `fecharegistro_mb` DATE NOT NULL,
@@ -1044,12 +1044,12 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`materiales_bodega` (
   INDEX `fk_materiales_bodega_categoria_mb1_idx` (`id_cat_mb` ASC),
   CONSTRAINT `fk_materiales_bodega_categoria_mb1`
     FOREIGN KEY (`id_cat_mb`)
-    REFERENCES `id17192662_saludlosalamos`.`categoria_mb` (`id_cat_mb`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`categoria_mb` (`id_cat_mb`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`solicitud_mat_bodega` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`solicitud_mat_bodega` (
   `id_sl_mat_bg` INT NOT NULL AUTO_INCREMENT,
   `rut` VARCHAR(11) NOT NULL,
   `id_mb` INT NOT NULL,
@@ -1063,22 +1063,22 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`solicitud_mat_bodega` (
   INDEX `fk_solicitud_mat_bodega_seguimiento_sl_mat_bg1_idx` (`id_seg_sl_mat_bg` ASC),
   CONSTRAINT `fk_usuario_has_materiales_bodega_usuario1`
     FOREIGN KEY (`rut`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuario_has_materiales_bodega_materiales_bodega1`
     FOREIGN KEY (`id_mb`)
-    REFERENCES `id17192662_saludlosalamos`.`materiales_bodega` (`id_mb`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`materiales_bodega` (`id_mb`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_solicitud_mat_bodega_seguimiento_sl_mat_bg1`
     FOREIGN KEY (`id_seg_sl_mat_bg`)
-    REFERENCES `id17192662_saludlosalamos`.`seguimiento_sl_mat_bg` (`id_seg_sl_mat_bg`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`seguimiento_sl_mat_bg` (`id_seg_sl_mat_bg`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`historial_mat_bodega` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`historial_mat_bodega` (
   `id_hs_mat_bg` INT NOT NULL AUTO_INCREMENT,
   `id_mb` INT NOT NULL,
   `id_est_mat_bg` INT NOT NULL,
@@ -1088,17 +1088,17 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`historial_mat_bodega` (
   INDEX `fk_historial_mat_bodega_materiales_bodega1_idx` (`id_mb` ASC),
   CONSTRAINT `fk_historial_mat_bodega_estado_mat_bodega1`
     FOREIGN KEY (`id_est_mat_bg`)
-    REFERENCES `id17192662_saludlosalamos`.`estado_mat_bodega` (`id_est_mat_bg`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`estado_mat_bodega` (`id_est_mat_bg`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_historial_mat_bodega_materiales_bodega1`
     FOREIGN KEY (`id_mb`)
-    REFERENCES `id17192662_saludlosalamos`.`materiales_bodega` (`id_mb`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`materiales_bodega` (`id_mb`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`soporte_tecnico` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`soporte_tecnico` (
   `id_sop_tec` INT NOT NULL AUTO_INCREMENT,
   `emisor` VARCHAR(11) NOT NULL,
   `receptor` VARCHAR(11) NOT NULL,
@@ -1113,17 +1113,17 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`soporte_tecnico` (
   INDEX `fk_soporte_tecnico_usuario2_idx` (`receptor` ASC),
   CONSTRAINT `fk_soporte_tecnico_usuario1`
     FOREIGN KEY (`emisor`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_soporte_tecnico_usuario2`
     FOREIGN KEY (`receptor`)
-    REFERENCES `id17192662_saludlosalamos`.`usuario` (`rut`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`usuario` (`rut`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;
 
-CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`opinante` (
+CREATE TABLE IF NOT EXISTS `bbnwbc1pb4vbzf13lgik`.`opinante` (
   `id_opte` INT NOT NULL AUTO_INCREMENT,
   `id_articulo` INT NOT NULL,
   `id_fb_opte` BIGINT(17) NOT NULL,
@@ -1136,7 +1136,7 @@ CREATE TABLE IF NOT EXISTS `id17192662_saludlosalamos`.`opinante` (
   INDEX `fk_opinante_articulo1_idx` (`id_articulo` ASC),
   CONSTRAINT `fk_opinante_articulo1`
     FOREIGN KEY (`id_articulo`)
-    REFERENCES `id17192662_saludlosalamos`.`articulo` (`id_articulo`)
+    REFERENCES `bbnwbc1pb4vbzf13lgik`.`articulo` (`id_articulo`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 DEFAULT CHARACTER SET = utf8;

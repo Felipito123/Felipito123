@@ -26,10 +26,10 @@ $mysqli = mysqli_connect("localhost:3306","saludlosalamos_cesfamsalud","2020cesf
 // $Contrasena = "2020cesfamla";
 // $NombreDB = "saludlosalamos_cesfam";
 
-$Host = "localhost";
-$NombreUsuario = "id17192662_saludlosalamos2021";
-$NombreDB = "id17192662_saludlosalamos";
-$Contrasena = "/gD8bHN6WwRRHu_R";
+$Host = "bbnwbc1pb4vbzf13lgik-mysql.services.clever-cloud.com";
+$NombreUsuario = "uwwkk4crkbthkwnw";
+$NombreDB = "bbnwbc1pb4vbzf13lgik";
+$Contrasena = "NGi6a2Q4BpKBYevcQMwJ";
 
 
 
