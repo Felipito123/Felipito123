@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <style type="text/css">
+        @media print {
+
+            .no-print,
+            .no-print * {
+                display: none !important;
+            }
+        }
+
+        html {
+            margin-left: 20px;
+        }
+
+        @page {
+            margin-left: 8px;
+            margin-right: 0px;
+            margin-top: 6px;
+            margin-bottom: 0px;
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 10px;
+        }
+
+        .codigo-barra {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        .titulo {
+            font-size: 14px !important;
+        }
+
+        .contenedor-comprobante1 {
+            margin-right: 22px;
+        }
+
+        .contenedor-comprobante2 {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        .contenedor-comprobante3 {
+            margin-right: 0px;
+            margin-left: 7px;
+        }
+
+        .contenedor-comprobante-interior1 {
+            width: 185px;
+            border: 1px solid;
+            border-radius: 6px;
+            border-color: black;
+            padding: 4px;
+            margin-bottom: 6px;
+        }
+
+        .contenedor-comprobante-interior1-1 {
+            width: 185px;
+            /*height: 100px;*/
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 4px;
+            padding-right: 4px;
+            border: 1px solid;
+            border-radius: 6px;
+            border-color: black;
+            margin-bottom: 6px;
+        }
+
+        .contenedor-comprobante-interior2 {
+            width: 225px;
+            border: 1px solid;
+            border-radius: 6px;
+            border-color: black;
+            padding: 4px;
+            margin-bottom: 6px;
+        }
+
+        .contenedor-comprobante-interior2-2 {
+            width: 225px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 4px;
+            padding-right: 4px;
+            border: 1px solid;
+            border-radius: 6px;
+            border-color: black;
+            margin-bottom: 6px;
+        }
+
+        .contenedor-comprobante-interior3 {
+            width: 205px;
+            border: 1px solid;
+            border-radius: 6px;
+            border-color: black;
+            padding: 4px;
+            margin-bottom: 6px;
+            margin-left: 7px;
+        }
+
+        .contenedor-comprobante-interior3-3 {
+            width: 205px;
+            padding-left: 4px;
+            padding-right: 4px;
+            border: 1px solid;
+            border-radius: 6px;
+            border-color: black;
+            margin-bottom: 6px;
+            margin-left: 7px;
+        }
+
+        .texto-izq {
+            float: left;
+            width: 20%;
+        }
+
+        .texto-der {
+            width: 80%;
+            float: left;
+        }
+
+        .limpiar {
+            clear: both;
+        }
+
+        .espaciado3cupon {
+            margin-bottom: 7px !important;
+            display: block;
+            clear: both;
+        }
+
+        span.espaciado3cupon {
+            height: 14px !important;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div class="contenedor-comprobante1" style="float:left;">
+            <img style="float:left;" src="logo_ubb_cupones.gif" width="110" height="23">
+            <span style="float:left;font-size:9px;margin-top:12px;">Emisión: 18/03/2021</span>
+            <div class="limpiar"></div>
+            <div class="contenedor-comprobante-interior1">
+
+                <div class="codigo-barra" style="padding-left: 15px; ">
+                    <center>
+                        <img src="cod_barras.png" width="100%" height="13">
+<!--img src="https://inscripcion.ubiobio.cl/c5ao0nlkiogkkm516akfjmbq6rrncfqf/recursos/dev/php/cod_barras.php?numero=asasasasa19387124*" width="100%" height="13">-->
+                    </center>
+                </div>
+                <center><b>COMPROBANTE DE MATRICULA</b></center>
+                <p style="text-align:right;">Folio: 2021129371938712401</p>
+                <div>
+                    <div class="texto-izq">
+                        Alumno
+                    </div>
+                    <div class="texto-der">
+                        19.387.124-0 GALDAMES VIDAL FELIPE ANDRÉS
+                    </div>
+                </div>
+                <div>
+                    <div class="texto-izq">
+                        Carrera
+                    </div>
+                    <div class="texto-der">
+                        2937-2 INGENIERÍA DE EJECUCIÓN EN COMPUTACIÓN E INFORMÁTICA
+                    </div>
+                </div>
+                <div class="limpiar"></div>
+                <div style="margin-bottom:6px;"></div>
+            </div>
+
+            <div class="contenedor-comprobante-interior1-1">
+                <center><b>Alumno Terminal</b></center>
+                <div style="margin-bottom:6px;"></div>
+                <div style="position:relative;">
+                    <img src="timbre_matricula.png" style="
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        margin: -45px 100px;
+                        z-index: -999;
+                        opacity: 0.4;" width="auto" height="90px">
+                    <center><b>Periodo Académico:2021-1</b></center>
+                </div>
+                <br>
+            </div>
+            <div>UNIVERSIDAD DEL BÍO-BÍO <span style="float: right; ">1361</span></div>
+        </div>
+
+
+        <div class="contenedor-comprobante2" style="float:left;">
+            <img style="float:left;" src="logo_ubb_cupones.gif" width="120" height="23">
+            <span style="float:left;margin-top:12px; font-size:9px; padding-left: 15px;">
+                Emisión: 18/03/2021
+            </span>
+            <div class="limpiar"></div>
+            <div class="contenedor-comprobante-interior2">
+
+                <div class="codigo-barra" style="padding-left: 15px; ">
+                    <center>
+                        <img src="cod_barras.png" width="100%" height="13">
+                    </center>
+                </div>
+
+                <center><b>COMPROBANTE DE MATRICULA</b></center>
+
+                <p style="text-align:right;  padding-right:15px; padding-left:10px; ">Folio: 2021129371938712401</p>
+
+                <div>
+                    <div class="texto-izq">
+                        Alumno
+                    </div>
+                    <div class="texto-der">
+                        19.387.124-0 GALDAMES VIDAL FELIPE ANDRÉS
+                    </div>
+                </div>
+
+                <div>
+                    <div class="texto-izq">
+                        Carrera
+                    </div>
+                    <div class="texto-der">
+                        2937-2 INGENIERÍA DE EJECUCIÓN EN COMPUTACIÓN E INFORMÁTICA
+                    </div>
+                </div>
+                <div class="limpiar"></div>
+                <div style="margin-bottom:6px;"></div>
+            </div>
+
+            <div class="contenedor-comprobante-interior2-2">
+
+                <center><b>Alumno Terminal</b></center>
+                <div style="margin-bottom:6px;"></div>
+                <div style="position:relative;">
+                    <img src="timbre_matricula.png" style="position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        margin: -45px 100px;
+                        z-index: -999;
+                        opacity: 0.4;" width="auto" height="90px">
+                    <center><b>Periodo Académico:2021-1</b></center>
+                </div>
+                <br>
+            </div>
+            <div>UNIVERSIDAD DEL BÍO-BÍO <span style="float: right; ">1361</span></div>
+        </div>
+
+        <div class="contenedor-comprobante3" style="float:left;">
+            <img style="float:left;margin-left:7px;" src="logo_ubb_cupones.gif" width="120" height="23">
+            <span style="float:left;margin-top:12px;margin-left:10px; font-size:9px;">
+                Emisión: 18/03/2021
+            </span>
+            <div class="limpiar"></div>
+            <div class="contenedor-comprobante-interior3">
+
+                <div>
+                    <div class="texto-izq">
+                        Alumno
+                    </div>
+                    <div class="texto-der">
+                        19.387.124-0 GALDAMES VIDAL FELIPE ANDRÉS
+                    </div>
+                </div>
+
+                <div>
+                    <div class="texto-izq">
+                        Carrera
+                    </div>
+                    <div class="texto-der">
+                        2937-2 INGENIERÍA DE EJECUCIÓN EN COMPUTACIÓN E INFORMÁTICA
+                    </div>
+                </div>
+                <div class="limpiar"></div>
+                <div style="margin-bottom:6px;"></div>
+            </div>
+
+            <div class="contenedor-comprobante-interior3-3">
+                <b class="espaciado3cupon" style="margin-top:9px;">Información Institucional</b>
+                <span class="espaciado3cupon">Correo Electrónico Institucional</span>
+                <span class="espaciado3cupon">felipe.galdames1501@alumnos.ubiobio.cl</span>
+                <span class="espaciado3cupon">Celular (*) 57459545</span>
+                <span class="espaciado3cupon">Dirección Académica (*)</span>
+                <span class="espaciado3cupon">Castellon 910 CONCEPCIÓN</span>
+                <span class="espaciado3cupon"></span>
+                <span class="espaciado3cupon">
+                    (*) Para solicitar actualización de la información debe dirigirse a Registro Académico
+                </span>
+                <div style="margin-bottom:6px;"><br><br></div>
+            </div>
+            <div style="margin-left:7px;">
+                UNIVERSIDAD DEL BÍO-BÍO <span style="float: right; padding-right: 10px;">1361</span>
+            </div>
+        </div>
+    </div>
+
+    <div style="clear: both"><br><br>
+
+        <input type="button" value="Imprimir" onclick="window.print(); window.close();" style="
+            width: 725px;
+            height: 50px;
+            font-size: 21px;
+            background-color: #ffb752;
+            color: white;
+            font-weight: bold;" class="no-print">
+
+
+
+    </div>
+</body>
+
+</html>

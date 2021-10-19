@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        .position-relative {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #e84118;
+            padding: 2px;
+        }
+
+        .border {
+            border: 1px solid #dee2e6 !important;
+        }
+
+        .rounded-circle {
+            border-radius: 50% !important;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        img,
+        svg {
+            vertical-align: middle;
+        }
+
+        .translate-middle {
+            transform: translate(-50%, -50%) !important;
+        }
+
+        .start-100 {
+            left: 100% !important;
+        }
+
+        .bottom-0 {
+            bottom: 0 !important;
+        }
+
+        .border-light {
+            border-color: #f8f9fa !important;
+        }
+
+        .p-1 {
+            padding: .25rem !important;
+        }
+
+        .position-absolute {
+            position: absolute !important;
+        }
+
+        .bg-success {
+            background-color: #198754 !important;
+        }
+
+        .visually-hidden,
+        .visually-hidden-focusable:not(:focus):not(:focus-within) {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="downloadButton">Download text</button>
+
+    <p>Fetch API with Promises - Array Buffer - no streaming.</p>
+
+    <script>
+        const btnDownload = document.getElementById('downloadButton');
+
+        btnDownload.addEventListener('click', () => {
+
+            // Request RSDS Stream download
+            downloadRsdsArray()
+                .then(value => {
+                    // Request RSDS Stream processing
+                    parseRequestArray(value);
+                });
+
+        });
+
+        /**
+         * Uses Fetch API to download ArrayBuffer containing RSDS,
+         * In this example there is lack of any Error handling.
+         * For production ready code
+         * you should add it
+         *
+         * @return {Promise<ArrayBuffer | never>}
+         */
+        function downloadRsdsArray() {
+            console.log(`DownloadRsds requested: `);
+            const url = "http://localhost/tesisactual/proyecto/firmadigital/prueba.html";
+
+            console.log(`url`, url);
+            return fetch(url)
+                .then(value => {
+                    console.log(`response`, value);
+                    console.log(`response status:`, value.status);
+                    return value.arrayBuffer();
+                });
+        }
+
+        /**
+         * Parse Rsds stream
+         *
+         * @param {ArrayBuffer} arrayBuffer
+         */
+        function parseRequestArray(arrayBuffer) {
+            // Create parser
+            const parser = new RsdsParserModule.RsdsParser(arrayBuffer);
+
+            // Add event handling
+            parser.addNewWordListener((word) => {
+                console.log("word: ", word.toString());
+            });
+
+            // Add event handling
+            parser.addOnEndListener((wordArray, sentences, audioBlock) => {
+                console.log("Parsing done ".concat(wordArray.length.toString()).concat(" words, ").concat(sentences.length.toString()).concat(" sentences Parsed. "));
+                console.log("Audio array of ".concat(audioBlock.getDataArrayBuffer().byteLength.toString()).concat(" bytes extracted."));
+
+                const byteArray = audioBlock.getDataArrayBuffer();
+                const audioContext = new AudioContext();
+
+                const source = audioContext.createBufferSource();
+                audioContext.decodeAudioData(byteArray, (buffer) => {
+                    source.buffer = buffer;
+                    source.connect(audioContext.destination);
+                    source.start(0);
+                });
+            });
+
+            // Parse the stream
+            parser.parse();
+        }
+    </script>
+    <style>
+    .avatar {
+        position: relative;
+        white-space: nowrap;
+        border-radius: 50%;
+        vertical-align: middle;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .avatar .badge-up {
+        position: absolute;
+        right: -8px;
+        top: -8px
+    }
+
+    .avatar[class*=avatar-] i {
+        border-radius: 50%;
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        right: -2px;
+        bottom: 0;
+        border: 1px solid #FFF
+    }
+
+    .avatar.avatar-offline i {
+        background-color: #e84118
+    }
+
+    .avatar.avatar-online i {
+        background-color: #16D39A
+    }
+
+    .avatar img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border: 0;
+        border-radius: 50%
+    }
+
+    .avatar.avatar-xl {
+        width: 70px;
+        height: 70px;
+        font-size: 1.5rem
+    }
+
+    .avatar.avatar-xl[class*=avatar-] i {
+        width: 20px;
+        height: 20px
+    }
+
+    .avatar.avatar-lg {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem
+    }
+
+    .avatar.avatar-lg[class*=avatar-] i {
+        width: 15px;
+        height: 15px
+    }
+
+    .avatar.avatar-sm {
+        width: 24px;
+        height: 24px;
+        font-size: 1rem
+    }
+
+    .avatar.avatar-sm[class*=avatar-] i {
+        width: 7px;
+        height: 7px
+    }
+
+    </style>
+
+<div class="avatar avatar-offline bg-white mr-1" style="border: 2px solid #e84118;padding: 2px;">
+    <img src="https://nextbootstrap.netlify.app/assets/images/profiles/1.jpg" class="img-fluid rounded-circle" alt="Avatar Image">
+    <span class="ficon feather icon-github"></span>
+    <i></i>
+</div>
+</body>
+
+</html>

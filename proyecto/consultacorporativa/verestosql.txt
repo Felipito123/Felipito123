@@ -1,0 +1,1 @@
+SELECT DISTINCT year(fecha_cargo) as anos FROM historial_cargo

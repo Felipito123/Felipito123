@@ -1,0 +1,1370 @@
+{
+    "nombre": "Casos Los Álamos",
+    "datos": [
+        {
+            "fecha": "2020-06-15",
+            "casosactivos": "5",
+            "acumulados": "7",
+            "recuperados": "2",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-06-16",
+            "casosactivos": "6",
+            "acumulados": "8",
+            "recuperados": "2",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-06-17",
+            "casosactivos": "7",
+            "acumulados": "9",
+            "recuperados": "2",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-06-18",
+            "casosactivos": "9",
+            "acumulados": "11",
+            "recuperados": "2",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-06-19",
+            "casosactivos": "12",
+            "acumulados": "14",
+            "recuperados": "2",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-06-20",
+            "casosactivos": "15",
+            "acumulados": "17",
+            "recuperados": "2",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-06-24",
+            "casosactivos": "35",
+            "acumulados": "39",
+            "recuperados": "4",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-06-25",
+            "casosactivos": "36",
+            "acumulados": "40",
+            "recuperados": "4",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-06-26",
+            "casosactivos": "37",
+            "acumulados": "42",
+            "recuperados": "5",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-06-27",
+            "casosactivos": "38",
+            "acumulados": "43",
+            "recuperados": "5",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-06-28",
+            "casosactivos": "41",
+            "acumulados": "46",
+            "recuperados": "5",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-06-29",
+            "casosactivos": "37",
+            "acumulados": "48",
+            "recuperados": "11",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-01",
+            "casosactivos": "39",
+            "acumulados": "50",
+            "recuperados": "11",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-02",
+            "casosactivos": "29",
+            "acumulados": "55",
+            "recuperados": "26",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-03",
+            "casosactivos": "23",
+            "acumulados": "57",
+            "recuperados": "34",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-04",
+            "casosactivos": "24",
+            "acumulados": "58",
+            "recuperados": "34",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-05",
+            "casosactivos": "28",
+            "acumulados": "62",
+            "recuperados": "34",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-08",
+            "casosactivos": "20",
+            "acumulados": "64",
+            "recuperados": "44",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-10",
+            "casosactivos": "20",
+            "acumulados": "69",
+            "recuperados": "49",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-11",
+            "casosactivos": "21",
+            "acumulados": "70",
+            "recuperados": "49",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-12",
+            "casosactivos": "25",
+            "acumulados": "74",
+            "recuperados": "49",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-13",
+            "casosactivos": "16",
+            "acumulados": "74",
+            "recuperados": "58",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-14",
+            "casosactivos": "17",
+            "acumulados": "75",
+            "recuperados": "58",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-15",
+            "casosactivos": "12",
+            "acumulados": "76",
+            "recuperados": "64",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-17",
+            "casosactivos": "15",
+            "acumulados": "79",
+            "recuperados": "64",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-18",
+            "casosactivos": "18",
+            "acumulados": "82",
+            "recuperados": "64",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-19",
+            "casosactivos": "20",
+            "acumulados": "84",
+            "recuperados": "64",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-20",
+            "casosactivos": "19",
+            "acumulados": "85",
+            "recuperados": "66",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-21",
+            "casosactivos": "23",
+            "acumulados": "89",
+            "recuperados": "66",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-22",
+            "casosactivos": "21",
+            "acumulados": "95",
+            "recuperados": "74",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-23",
+            "casosactivos": "27",
+            "acumulados": "101",
+            "recuperados": "74",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-24",
+            "casosactivos": "32",
+            "acumulados": "106",
+            "recuperados": "74",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-27",
+            "casosactivos": "25",
+            "acumulados": "108",
+            "recuperados": "83",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-07-31",
+            "casosactivos": "24",
+            "acumulados": "110",
+            "recuperados": "86",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-08-01",
+            "casosactivos": "25",
+            "acumulados": "111",
+            "recuperados": "86",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-08-02",
+            "casosactivos": "26",
+            "acumulados": "112",
+            "recuperados": "86",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-08-04",
+            "casosactivos": "24",
+            "acumulados": "114",
+            "recuperados": "90",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-08-05",
+            "casosactivos": "14",
+            "acumulados": "116",
+            "recuperados": "102",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-08-06",
+            "casosactivos": "18",
+            "acumulados": "120",
+            "recuperados": "102",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-08-07",
+            "casosactivos": "23",
+            "acumulados": "125",
+            "recuperados": "102",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-08-10",
+            "casosactivos": "26",
+            "acumulados": "131",
+            "recuperados": "105",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-08-12",
+            "casosactivos": "30",
+            "acumulados": "135",
+            "recuperados": "105",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-08-14",
+            "casosactivos": "25",
+            "acumulados": "138",
+            "recuperados": "113",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-08-16",
+            "casosactivos": "30",
+            "acumulados": "143",
+            "recuperados": "113",
+            "fallecidos": "0"
+        },
+        {
+            "fecha": "2020-08-17",
+            "casosactivos": "24",
+            "acumulados": "144",
+            "recuperados": "119",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-08-18",
+            "casosactivos": "24",
+            "acumulados": "144",
+            "recuperados": "119",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-08-20",
+            "casosactivos": "23",
+            "acumulados": "149",
+            "recuperados": "125",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-08-23",
+            "casosactivos": "27",
+            "acumulados": "153",
+            "recuperados": "125",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-08-24",
+            "casosactivos": "28",
+            "acumulados": "154",
+            "recuperados": "125",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-08-25",
+            "casosactivos": "25",
+            "acumulados": "159",
+            "recuperados": "133",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-08-26",
+            "casosactivos": "25",
+            "acumulados": "160",
+            "recuperados": "134",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-08-28",
+            "casosactivos": "21",
+            "acumulados": "164",
+            "recuperados": "142",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-08-31",
+            "casosactivos": "20",
+            "acumulados": "169",
+            "recuperados": "148",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-01",
+            "casosactivos": "23",
+            "acumulados": "172",
+            "recuperados": "148",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-02",
+            "casosactivos": "25",
+            "acumulados": "176",
+            "recuperados": "150",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-03",
+            "casosactivos": "28",
+            "acumulados": "179",
+            "recuperados": "150",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-04",
+            "casosactivos": "28",
+            "acumulados": "184",
+            "recuperados": "155",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-05",
+            "casosactivos": "34",
+            "acumulados": "190",
+            "recuperados": "155",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-07",
+            "casosactivos": "31",
+            "acumulados": "201",
+            "recuperados": "169",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-08",
+            "casosactivos": "35",
+            "acumulados": "206",
+            "recuperados": "170",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-09",
+            "casosactivos": "36",
+            "acumulados": "208",
+            "recuperados": "171",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-10",
+            "casosactivos": "39",
+            "acumulados": "213",
+            "recuperados": "173",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-11",
+            "casosactivos": "38",
+            "acumulados": "217",
+            "recuperados": "178",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-13",
+            "casosactivos": "43",
+            "acumulados": "222",
+            "recuperados": "178",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-14",
+            "casosactivos": "49",
+            "acumulados": "238",
+            "recuperados": "188",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-15",
+            "casosactivos": "52",
+            "acumulados": "243",
+            "recuperados": "190",
+            "fallecidos": "1"
+        },
+        {
+            "fecha": "2020-09-16",
+            "casosactivos": "53",
+            "acumulados": "249",
+            "recuperados": "194",
+            "fallecidos": "2"
+        },
+        {
+            "fecha": "2020-09-17",
+            "casosactivos": "51",
+            "acumulados": "250",
+            "recuperados": "197",
+            "fallecidos": "2"
+        },
+        {
+            "fecha": "2020-09-18",
+            "casosactivos": "50",
+            "acumulados": "254",
+            "recuperados": "202",
+            "fallecidos": "2"
+        },
+        {
+            "fecha": "2020-09-21",
+            "casosactivos": "42",
+            "acumulados": "258",
+            "recuperados": "213",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-09-22",
+            "casosactivos": "42",
+            "acumulados": "262",
+            "recuperados": "217",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-09-23",
+            "casosactivos": "39",
+            "acumulados": "266",
+            "recuperados": "224",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-09-24",
+            "casosactivos": "37",
+            "acumulados": "270",
+            "recuperados": "230",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-09-25",
+            "casosactivos": "46",
+            "acumulados": "282",
+            "recuperados": "233",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-09-26",
+            "casosactivos": "49",
+            "acumulados": "285",
+            "recuperados": "233",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-09-28",
+            "casosactivos": "41",
+            "acumulados": "292",
+            "recuperados": "248",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-09-29",
+            "casosactivos": "54",
+            "acumulados": "305",
+            "recuperados": "248",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-09-30",
+            "casosactivos": "56",
+            "acumulados": "312",
+            "recuperados": "253",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-10-01",
+            "casosactivos": "59",
+            "acumulados": "317",
+            "recuperados": "255",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-10-02",
+            "casosactivos": "63",
+            "acumulados": "325",
+            "recuperados": "259",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-10-03",
+            "casosactivos": "65",
+            "acumulados": "330",
+            "recuperados": "262",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-10-05",
+            "casosactivos": "60",
+            "acumulados": "332",
+            "recuperados": "269",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-10-06",
+            "casosactivos": "59",
+            "acumulados": "335",
+            "recuperados": "273",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-10-08",
+            "casosactivos": "59",
+            "acumulados": "343",
+            "recuperados": "281",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-10-09",
+            "casosactivos": "52",
+            "acumulados": "351",
+            "recuperados": "296",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-10-10",
+            "casosactivos": "49",
+            "acumulados": "351",
+            "recuperados": "299",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-10-11",
+            "casosactivos": "45",
+            "acumulados": "352",
+            "recuperados": "304",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-10-12",
+            "casosactivos": "50",
+            "acumulados": "362",
+            "recuperados": "309",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-10-13",
+            "casosactivos": "42",
+            "acumulados": "365",
+            "recuperados": "320",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-10-14",
+            "casosactivos": "47",
+            "acumulados": "376",
+            "recuperados": "326",
+            "fallecidos": "3"
+        },
+        {
+            "fecha": "2020-10-15",
+            "casosactivos": "43",
+            "acumulados": "379",
+            "recuperados": "332",
+            "fallecidos": "4"
+        },
+        {
+            "fecha": "2020-10-16",
+            "casosactivos": "49",
+            "acumulados": "386",
+            "recuperados": "333",
+            "fallecidos": "4"
+        },
+        {
+            "fecha": "2020-10-17",
+            "casosactivos": "51",
+            "acumulados": "391",
+            "recuperados": "336",
+            "fallecidos": "4"
+        },
+        {
+            "fecha": "2020-10-18",
+            "casosactivos": "54",
+            "acumulados": "395",
+            "recuperados": "337",
+            "fallecidos": "4"
+        },
+        {
+            "fecha": "2020-10-20",
+            "casosactivos": "46",
+            "acumulados": "397",
+            "recuperados": "347",
+            "fallecidos": "4"
+        },
+        {
+            "fecha": "2020-10-21",
+            "casosactivos": "45",
+            "acumulados": "410",
+            "recuperados": "360",
+            "fallecidos": "5"
+        },
+        {
+            "fecha": "2020-10-22",
+            "casosactivos": "44",
+            "acumulados": "412",
+            "recuperados": "363",
+            "fallecidos": "5"
+        },
+        {
+            "fecha": "2020-10-23",
+            "casosactivos": "40",
+            "acumulados": "416",
+            "recuperados": "371",
+            "fallecidos": "5"
+        },
+        {
+            "fecha": "2020-10-24",
+            "casosactivos": "38",
+            "acumulados": "417",
+            "recuperados": "374",
+            "fallecidos": "5"
+        },
+        {
+            "fecha": "2020-10-25",
+            "casosactivos": "29",
+            "acumulados": "417",
+            "recuperados": "383",
+            "fallecidos": "5"
+        },
+        {
+            "fecha": "2020-10-26",
+            "casosactivos": "25",
+            "acumulados": "420",
+            "recuperados": "390",
+            "fallecidos": "5"
+        },
+        {
+            "fecha": "2020-10-27",
+            "casosactivos": "20",
+            "acumulados": "421",
+            "recuperados": "396",
+            "fallecidos": "5"
+        },
+        {
+            "fecha": "2020-10-29",
+            "casosactivos": "19",
+            "acumulados": "422",
+            "recuperados": "398",
+            "fallecidos": "5"
+        },
+        {
+            "fecha": "2020-10-30",
+            "casosactivos": "18",
+            "acumulados": "424",
+            "recuperados": "401",
+            "fallecidos": "5"
+        },
+        {
+            "fecha": "2020-10-31",
+            "casosactivos": "13",
+            "acumulados": "424",
+            "recuperados": "406",
+            "fallecidos": "5"
+        },
+        {
+            "fecha": "2020-11-01",
+            "casosactivos": "13",
+            "acumulados": "424",
+            "recuperados": "406",
+            "fallecidos": "5"
+        },
+        {
+            "fecha": "2020-11-02",
+            "casosactivos": "11",
+            "acumulados": "426",
+            "recuperados": "410",
+            "fallecidos": "5"
+        },
+        {
+            "fecha": "2020-11-03",
+            "casosactivos": "9",
+            "acumulados": "427",
+            "recuperados": "413",
+            "fallecidos": "5"
+        },
+        {
+            "fecha": "2020-11-04",
+            "casosactivos": "8",
+            "acumulados": "428",
+            "recuperados": "414",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-06",
+            "casosactivos": "8",
+            "acumulados": "429",
+            "recuperados": "415",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-07",
+            "casosactivos": "9",
+            "acumulados": "430",
+            "recuperados": "415",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-08",
+            "casosactivos": "9",
+            "acumulados": "432",
+            "recuperados": "417",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-09",
+            "casosactivos": "9",
+            "acumulados": "432",
+            "recuperados": "417",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-10",
+            "casosactivos": "9",
+            "acumulados": "433",
+            "recuperados": "418",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-11",
+            "casosactivos": "9",
+            "acumulados": "434",
+            "recuperados": "419",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-13",
+            "casosactivos": "12",
+            "acumulados": "440",
+            "recuperados": "422",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-14",
+            "casosactivos": "13",
+            "acumulados": "441",
+            "recuperados": "422",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-15",
+            "casosactivos": "15",
+            "acumulados": "443",
+            "recuperados": "422",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-16",
+            "casosactivos": "19",
+            "acumulados": "448",
+            "recuperados": "423",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-17",
+            "casosactivos": "22",
+            "acumulados": "452",
+            "recuperados": "424",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-18",
+            "casosactivos": "22",
+            "acumulados": "452",
+            "recuperados": "424",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-19",
+            "casosactivos": "23",
+            "acumulados": "453",
+            "recuperados": "424",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-20",
+            "casosactivos": "21",
+            "acumulados": "455",
+            "recuperados": "428",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-21",
+            "casosactivos": "22",
+            "acumulados": "456",
+            "recuperados": "428",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-22",
+            "casosactivos": "18",
+            "acumulados": "456",
+            "recuperados": "432",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-23",
+            "casosactivos": "18",
+            "acumulados": "456",
+            "recuperados": "432",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-24",
+            "casosactivos": "16",
+            "acumulados": "460",
+            "recuperados": "438",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-25",
+            "casosactivos": "15",
+            "acumulados": "463",
+            "recuperados": "442",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-26",
+            "casosactivos": "16",
+            "acumulados": "464",
+            "recuperados": "442",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-27",
+            "casosactivos": "17",
+            "acumulados": "466",
+            "recuperados": "443",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-28",
+            "casosactivos": "15",
+            "acumulados": "467",
+            "recuperados": "446",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-29",
+            "casosactivos": "15",
+            "acumulados": "467",
+            "recuperados": "446",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-11-30",
+            "casosactivos": "15",
+            "acumulados": "467",
+            "recuperados": "446",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-12-07",
+            "casosactivos": "11",
+            "acumulados": "472",
+            "recuperados": "455",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-12-08",
+            "casosactivos": "13",
+            "acumulados": "476",
+            "recuperados": "457",
+            "fallecidos": "6"
+        },
+        {
+            "fecha": "2020-12-09",
+            "casosactivos": "11",
+            "acumulados": "476",
+            "recuperados": "458",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-10",
+            "casosactivos": "13",
+            "acumulados": "478",
+            "recuperados": "458",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-11",
+            "casosactivos": "13",
+            "acumulados": "481",
+            "recuperados": "461",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-12",
+            "casosactivos": "17",
+            "acumulados": "485",
+            "recuperados": "461",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-13",
+            "casosactivos": "19",
+            "acumulados": "487",
+            "recuperados": "461",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-14",
+            "casosactivos": "20",
+            "acumulados": "489",
+            "recuperados": "462",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-15",
+            "casosactivos": "20",
+            "acumulados": "489",
+            "recuperados": "462",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-16",
+            "casosactivos": "18",
+            "acumulados": "491",
+            "recuperados": "466",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-17",
+            "casosactivos": "17",
+            "acumulados": "491",
+            "recuperados": "467",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-18",
+            "casosactivos": "16",
+            "acumulados": "492",
+            "recuperados": "469",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-19",
+            "casosactivos": "16",
+            "acumulados": "494",
+            "recuperados": "471",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-20",
+            "casosactivos": "15",
+            "acumulados": "496",
+            "recuperados": "474",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-21",
+            "casosactivos": "16",
+            "acumulados": "499",
+            "recuperados": "476",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-22",
+            "casosactivos": "18",
+            "acumulados": "503",
+            "recuperados": "478",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-23",
+            "casosactivos": "21",
+            "acumulados": "509",
+            "recuperados": "481",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-25",
+            "casosactivos": "24",
+            "acumulados": "513",
+            "recuperados": "482",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-26",
+            "casosactivos": "29",
+            "acumulados": "518",
+            "recuperados": "482",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-27",
+            "casosactivos": "31",
+            "acumulados": "523",
+            "recuperados": "485",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-28",
+            "casosactivos": "31",
+            "acumulados": "525",
+            "recuperados": "487",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-29",
+            "casosactivos": "42",
+            "acumulados": "542",
+            "recuperados": "493",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-30",
+            "casosactivos": "47",
+            "acumulados": "548",
+            "recuperados": "494",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2020-12-31",
+            "casosactivos": "52",
+            "acumulados": "555",
+            "recuperados": "496",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2021-01-01",
+            "casosactivos": "52",
+            "acumulados": "559",
+            "recuperados": "500",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2021-01-02",
+            "casosactivos": "58",
+            "acumulados": "567",
+            "recuperados": "502",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2021-01-03",
+            "casosactivos": "55",
+            "acumulados": "569",
+            "recuperados": "507",
+            "fallecidos": "7"
+        },
+        {
+            "fecha": "2021-01-07",
+            "casosactivos": "46",
+            "acumulados": "588",
+            "recuperados": "534",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-08",
+            "casosactivos": "43",
+            "acumulados": "592",
+            "recuperados": "541",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-09",
+            "casosactivos": "40",
+            "acumulados": "595",
+            "recuperados": "547",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-10",
+            "casosactivos": "36",
+            "acumulados": "595",
+            "recuperados": "551",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-11",
+            "casosactivos": "40",
+            "acumulados": "602",
+            "recuperados": "554",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-12",
+            "casosactivos": "32",
+            "acumulados": "607",
+            "recuperados": "567",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-13",
+            "casosactivos": "32",
+            "acumulados": "613",
+            "recuperados": "573",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-14",
+            "casosactivos": "48",
+            "acumulados": "633",
+            "recuperados": "577",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-15",
+            "casosactivos": "52",
+            "acumulados": "643",
+            "recuperados": "583",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-16",
+            "casosactivos": "58",
+            "acumulados": "652",
+            "recuperados": "586",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-17",
+            "casosactivos": "59",
+            "acumulados": "657",
+            "recuperados": "590",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-18",
+            "casosactivos": "62",
+            "acumulados": "662",
+            "recuperados": "592",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-19",
+            "casosactivos": "75",
+            "acumulados": "676",
+            "recuperados": "593",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-20",
+            "casosactivos": "76",
+            "acumulados": "682",
+            "recuperados": "598",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-21",
+            "casosactivos": "81",
+            "acumulados": "692",
+            "recuperados": "603",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-22",
+            "casosactivos": "85",
+            "acumulados": "699",
+            "recuperados": "606",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-23",
+            "casosactivos": "91",
+            "acumulados": "712",
+            "recuperados": "613",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-24",
+            "casosactivos": "83",
+            "acumulados": "724",
+            "recuperados": "633",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-25",
+            "casosactivos": "79",
+            "acumulados": "728",
+            "recuperados": "641",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-26",
+            "casosactivos": "66",
+            "acumulados": "737",
+            "recuperados": "663",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-28",
+            "casosactivos": "69",
+            "acumulados": "752",
+            "recuperados": "675",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-29",
+            "casosactivos": "70",
+            "acumulados": "761",
+            "recuperados": "683",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-30",
+            "casosactivos": "76",
+            "acumulados": "771",
+            "recuperados": "687",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-01-31",
+            "casosactivos": "75",
+            "acumulados": "776",
+            "recuperados": "693",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-02-02",
+            "casosactivos": "61",
+            "acumulados": "786",
+            "recuperados": "717",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-02-04",
+            "casosactivos": "72",
+            "acumulados": "807",
+            "recuperados": "727",
+            "fallecidos": "8"
+        },
+        {
+            "fecha": "2021-02-05",
+            "casosactivos": "67",
+            "acumulados": "817",
+            "recuperados": "740",
+            "fallecidos": "10"
+        },
+        {
+            "fecha": "2021-02-07",
+            "casosactivos": "73",
+            "acumulados": "836",
+            "recuperados": "753",
+            "fallecidos": "10"
+        },
+        {
+            "fecha": "2021-02-08",
+            "casosactivos": "71",
+            "acumulados": "840",
+            "recuperados": "759",
+            "fallecidos": "10"
+        },
+        {
+            "fecha": "2021-02-09",
+            "casosactivos": "82",
+            "acumulados": "855",
+            "recuperados": "763",
+            "fallecidos": "10"
+        },
+        {
+            "fecha": "2021-02-10",
+            "casosactivos": "92",
+            "acumulados": "873",
+            "recuperados": "771",
+            "fallecidos": "10"
+        },
+        {
+            "fecha": "2021-02-11",
+            "casosactivos": "92",
+            "acumulados": "880",
+            "recuperados": "778",
+            "fallecidos": "10"
+        },
+        {
+            "fecha": "2021-02-12",
+            "casosactivos": "93",
+            "acumulados": "886",
+            "recuperados": "783",
+            "fallecidos": "10"
+        },
+        {
+            "fecha": "2021-02-13",
+            "casosactivos": "88",
+            "acumulados": "904",
+            "recuperados": "796",
+            "fallecidos": "10"
+        },
+        {
+            "fecha": "2021-02-14",
+            "casosactivos": "85",
+            "acumulados": "907",
+            "recuperados": "802",
+            "fallecidos": "10"
+        }
+    ]
+}

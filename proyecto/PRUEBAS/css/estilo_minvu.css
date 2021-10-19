@@ -1,0 +1,177 @@
+
+
+
+    .btn-popup {
+        background-color: #0056b3;
+        color: #fff;
+        border-radius: 0;
+        font-weight: 700;
+        padding: 4px 0;
+        width: 100%;
+        max-width: 180px;
+        display: block;
+        margin: 15px auto 0 auto;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    .btn-popup:hover {
+        color: #fff;
+    }
+
+    a:hover {
+        color: #0056b3;
+        text-decoration: none;
+    }
+
+    a:hover {
+        opacity: 0.7;
+    }
+
+    .cerrar {
+        background-image: url(https://www.minvu.gob.cl/wp-content/themes/minvu/images/cerrar.svg);
+        background-position: center center;
+        background-size: 9px;
+        background-repeat: no-repeat;
+        border: 1px solid gray;
+        height: 28px;
+        width: 28px;
+        display: block;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        z-index: 9;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    
+.modal-popup .modal-content .cerrar:hover {
+    background-color: #eee;
+}
+
+.modal-popup .modal-body {
+    padding-top: 45px;
+    padding-right: 45px;
+    padding-bottom: 30px;
+}
+
+.modal-popup .modal-body p {
+    font-size: 18px;
+    margin: 0;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.modal-popup .modal-body img {
+    max-width: 100%;
+    height: auto;
+	width:100%;
+}
+
+.modal-popup .modal-body h1, h2, h3, h4, h5, h6 {
+    background-image: none;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+/* 
+.modal.fade.show {
+background: rgba(0, 0, 0, 0.7)!important;}
+.modal-popup .modal-body{
+	padding-top:15px;
+	padding-right:15px;
+} */
+
+
+
+.subsidio-ds1-clase-media-segundo-llamado-compra-o-construccion-de-vivienda{  }
+.subsidio-ds1-clase-media-resultados-compra-o-construccion-de-vivienda .bloque-0{ margin:0px;background: #00A099 url("/wp-content/uploads/2020/10/fondo-ds1.png") center no-repeat;padding: 2em 0; background-size:cover; }
+.subsidio-ds1-clase-media-resultados-compra-o-construccion-de-vivienda .bloque-1{ background:#009F97;margin:0px; padding:2em 0;margin:0;display:none; }
+.subsidio-ds1-clase-media-resultados-compra-o-construccion-de-vivienda .bloque-2{ margin:0px; padding:2em 0;margin:0; }
+.subsidio-ds1-clase-media-resultados-compra-o-construccion-de-vivienda .bloque-3{padding: 2em 0 2em 0;background:#F29100; margin:0; }
+.subsidio-ds1-clase-media-resultados-compra-o-construccion-de-vivienda .bloque-4{padding: 2em 0 2em 0;background:#1D70B7;margin:0;  }
+.subsidio-ds1-clase-media-resultados-compra-o-construccion-de-vivienda .bloque-5{ padding:2em 0;margin:0;}
+.subsidio-ds1-clase-media-resultados-compra-o-construccion-de-vivienda .bloque-6{padding: 2em 0 2em 0;background:#00A099;margin:0;  }
+.subsidio-ds1-clase-media-resultados-compra-o-construccion-de-vivienda .bloque-7{  background: #1D70B7; padding:1em 0 1em 0;margin:0;}
+.subsidio-ds1-clase-media-resultados-compra-o-construccion-de-vivienda .bloque-8{ padding:2em 0;margin:0;}
+.subsidio-ds1-clase-media-resultados-compra-o-construccion-de-vivienda .preguntas{ font-size:1.9em; text-align:center;color: #fff;line-height: 120%;font-weight: 600;}
+.subsidio-ds1-clase-media-resultados-compra-o-construccion-de-vivienda .preguntas a{ margin:20px 0;display: block;}
+.subsidio-ds1-clase-media-resultados-compra-o-construccion-de-vivienda .bloque-1 .preguntas{ font-size:1.3em; }
+
+
+
+/*ds1 segundo llamado*/
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-0, 
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-1, 
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-2, 
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-3, 
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-4, 
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-5, 
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-6, 
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8,
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-7{margin:0px; padding:2em 0px;font-size:1.3em;}
+
+
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-0 {background:#1F70B4 url("/wp-content/uploads/2021/04/fondo-header-ds1-21.jpg") 0px 0px no-repeat;background-size: cover;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-1{background:#00A099;text-align:center; padding:0px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-1 .box1{background:#00A099;text-align:center;padding: 1em 20px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-1 .box2{background:#02897F;text-align:center;padding: 1em 20px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-1 .box3{background:#03756A;text-align:center;padding: 1em 20px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-1 h3{color:#fff; text-align:center; font-size: 1.8em;margin-bottom:10px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-1 .digital{background:#E3521D; color:#fff;text-align:center; font-size: 1.1em; padding:10px 20px;border-radius:20px;font-weight:600;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-1 .calendario{color:#F4B558; text-align:left; font-size: 1.2em; padding:10px 0px 10px 80px;background:url("/wp-content/uploads/2020/10/icono-calendario.png") 0px 10px no-repeat;background-size:60px; margin:1em auto;font-weight:600;width:80%;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-1 p{color:#fff; text-align:center; font-size: 1em;}
+
+
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-2{background:#1F70B4;text-align:center;font-size: 1.3em;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-2 a{color:#fff;text-align:center;background:url("/wp-content/uploads/2021/05/clic-ds1.png") top right no-repeat;padding:5px 45px 5px 0px;font-size: 2em;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-3{background:#F29100;text-align:center;}
+
+
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-4{background:#FFED9B;color:#F29100;font-weight:bold;}
+
+
+
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-5{background:#fff;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-5 h3{color:#F29100; text-align:center; font-size: 1.6em;margin-bottom:1.5em;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-5 ul{padding-left:0px;padding-bottom:20px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-5 li{list-style:none;  padding:10px 0px 25px 65px; }
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-5 li.uno-d { background: url("../img/iconosamarillo/ico-18.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-5 li.dos-d { background: url("../img/iconosamarillo/ico-cedula.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-5 li.tres-d { background: url("../img/iconosamarillo/ico-ahorro.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-5 li.cuatro-d { background: url("../img/iconosamarillo/ico-acreditar-21.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-5 li.cinco-d { background: url("../img/iconosamarillo/ico-rsh.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-5 li.seis-d { background: url("../img/iconosamarillo/ico-tramos.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-5 li.seis-d ul{ padding-bottom:0px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-5 li.seis-d li{list-style:none;  padding:10px 0px 10px 35px;background: url("../img/iconosamarillo/ticket1-ds1-21.png") 3px 15px no-repeat;background-size: 20px; }
+
+
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-6{background:#00A099;text-align:center;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-7{background:#d4e6e4;color:#00A099;font-weight:bold;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8{background:#fff;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 h3{color:#00A099; text-align:center; font-size: 1.6em;margin-bottom:1.5em;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li{list-style:none;  padding:10px 0px 25px 65px; }
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li.uno-d { background: url("../img/iconosverdes/ico1-ds1-21.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li.dos-d { background: url("../img/iconosverdes/ico2-ds1-21.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li.tres-d { background: url("../img/iconosverdes/ico3-ds1-21.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li.cuatro-d { background: url("../img/iconosverdes/ico4-ds1-21.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li.cinco-d { background: url("../img/iconosverdes/ico5-ds1-21.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li.seis-d { background: url("../img/iconosverdes/ico6-ds1-21.png") 3px 3px no-repeat;background-size: 50px;}
+
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li.siete-d { background: url("../img/iconosverdes/ico7-ds1-21.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li.siete-d li{list-style:none;  padding:10px 0px 10px 35px;background: url("../img/iconosverdes/ticket2-ds1-21.png") 3px 15px no-repeat;background-size: 20px; }
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li.siete-d ul{ padding-bottom:0px;}
+
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li.ocho-d { background: url("../img/iconosverdes/ico8-ds1-21.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li.ocho-d ul{ padding-bottom:0px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li.ocho-d li{list-style:none;  padding:10px 0px 10px 35px;background: url("../img/iconosverdes/ticket2-ds1-21.png") 3px 15px no-repeat;background-size: 20px; }
+
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-8 li.nueve-d { background: url("../img/iconosverdes/ico9-ds1-21.png") 3px 3px no-repeat;background-size: 50px;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-9{background: #1F70B4;margin:0px; padding:1em 0px; text-align:center;}
+.subsidio-ds1-clase-media-primer-llamado-compra-o-construccion-de-vivienda .bloque-9 a{color:#fff;text-align:center;background:url("/wp-content/uploads/2021/05/clic-ds1.png") top right no-repeat;padding:5px 45px 5px 0px;font-size: 2em;}
+

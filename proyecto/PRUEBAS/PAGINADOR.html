@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://pagination.js.org/dist/2.1.4/pagination.min.js"></script>
+    <link rel="stylesheet" href="https://pagination.js.org/dist/2.1.4/pagination.css" />
+
+</head>
+
+<body>
+    <div id="list">
+        <div class="wrapper"></div>
+    </div>
+
+
+    <script>
+
+        // var json = {
+        //     "Product": [
+        //         {
+        //             "Key1": "Value1 A"
+        //         },
+        //         {
+        //             "Key1": "Value1 B"
+        //         },
+        //         {
+        //             "Key1": "Value1 C"
+        //         },
+        //         {
+        //             "Key1": "Value1 D"
+        //         },
+        //         {
+        //             "Key1": "Value1 E"
+        //         },
+        //         {
+        //             "Key1": "Value1 F"
+        //         },
+        //         {
+        //             "Key1": "Value1 G"
+        //         },
+        //         {
+        //             "Key1": "Value1 H"
+        //         },
+        //         {
+        //             "Key1": "Value1 I"
+        //         }
+        //     ]
+        // }
+
+        var json =
+            [
+                {
+                    "ID": 1,
+                    "titulo": "salud familiar",
+                    "descrbreve": "Su objetivo es contribuir a elevar el nivel de salud mental de NNA y jóvenes de familias con alto riesgo psicosocial, asegurando su acceso, oportunidad y calidad de atención de salud...",
+                    "descrgeneral": "El Programa de salud cardiovascular se implementa en atención primaria de salud con el objetivo principal de reducir la incidencia de eventos cardiovasculares a través del control y compensación de los factores de riesgo cardiovascular. <br><br> Pertenecen a este programa las personas con hipertensión arterial, diabetes mellitus tipo 2, dislipidemia, tabaquismo, antecedentes personales de enfermedad cardiovascular aterosclerótica. <br><br>Sus objetivos son reducir el Riesgo Cardiovascular de las personas bajo control, fomentando estilos de vida saludables. Lograr el control de los factores de riesgo, alcanzando niveles de presión arterial óptimos, mejorar el control metabólico de las personas con diabetes, mejorar los niveles de colesterol de las personas con dislipidemia, prevención secundaria en personas con antecedentes de enfermedades cardiovasculares y pesquisar precozmente la enfermedad renal crónica en personas con factores de riesgo.",
+                    "imagen": "http://cesfam18.cl/wp-content/uploads/2018/01/ChileCrece.png"
+                },
+                {
+                    "ID": 2,
+                    "titulo": "PROGRAMA CARDIOVASCULAR",
+                    "descrbreve": "Su objetivo es contribuir a elevar el nivel de salud mental de NNA y jóvenes de familias con alto riesgo psicosocial, asegurando su acceso, oportunidad y calidad de atención de salud...",
+                    "descrgeneral": "El Programa de salud cardiovascular se implementa en atención primaria de salud con el objetivo principal de reducir la incidencia de eventos cardiovasculares a través del control y compensación de los factores de riesgo cardiovascular. <br><br> Pertenecen a este programa las personas con hipertensión arterial, diabetes mellitus tipo 2, dislipidemia, tabaquismo, antecedentes personales de enfermedad cardiovascular aterosclerótica. <br><br>Sus objetivos son reducir el Riesgo Cardiovascular de las personas bajo control, fomentando estilos de vida saludables. Lograr el control de los factores de riesgo, alcanzando niveles de presión arterial óptimos, mejorar el control metabólico de las personas con diabetes, mejorar los niveles de colesterol de las personas con dislipidemia, prevención secundaria en personas con antecedentes de enfermedades cardiovasculares y pesquisar precozmente la enfermedad renal crónica en personas con factores de riesgo.",
+                    "imagen": "http://cesfam18.cl/wp-content/uploads/2018/01/ChileCrece.png"
+                },
+                {
+                    "ID": 3,
+                    "titulo": "PROGRAMA 3",
+                    "descrbreve": "Su objetivo es contribuir a elevar el nivel de salud mental de NNA y jóvenes de familias con alto riesgo psicosocial, asegurando su acceso, oportunidad y calidad de atención de salud...",
+                    "descrgeneral": "El Programa de salud cardiovascular se implementa en atención primaria de salud con el objetivo principal de reducir la incidencia de eventos cardiovasculares a través del control y compensación de los factores de riesgo cardiovascular. <br><br> Pertenecen a este programa las personas con hipertensión arterial, diabetes mellitus tipo 2, dislipidemia, tabaquismo, antecedentes personales de enfermedad cardiovascular aterosclerótica. <br><br>Sus objetivos son reducir el Riesgo Cardiovascular de las personas bajo control, fomentando estilos de vida saludables. Lograr el control de los factores de riesgo, alcanzando niveles de presión arterial óptimos, mejorar el control metabólico de las personas con diabetes, mejorar los niveles de colesterol de las personas con dislipidemia, prevención secundaria en personas con antecedentes de enfermedades cardiovasculares y pesquisar precozmente la enfermedad renal crónica en personas con factores de riesgo.",
+                    "imagen": "http://cesfam18.cl/wp-content/uploads/2018/01/ChileCrece.png"
+                },
+                {
+                    "ID": 4,
+                    "titulo": "PROGRAMA 4",
+                    "descrbreve": "Su objetivo es contribuir a elevar el nivel de salud mental de NNA y jóvenes de familias con alto riesgo psicosocial, asegurando su acceso, oportunidad y calidad de atención de salud...",
+                    "descrgeneral": "El Programa de salud cardiovascular se implementa en atención primaria de salud con el objetivo principal de reducir la incidencia de eventos cardiovasculares a través del control y compensación de los factores de riesgo cardiovascular. <br><br> Pertenecen a este programa las personas con hipertensión arterial, diabetes mellitus tipo 2, dislipidemia, tabaquismo, antecedentes personales de enfermedad cardiovascular aterosclerótica. <br><br>Sus objetivos son reducir el Riesgo Cardiovascular de las personas bajo control, fomentando estilos de vida saludables. Lograr el control de los factores de riesgo, alcanzando niveles de presión arterial óptimos, mejorar el control metabólico de las personas con diabetes, mejorar los niveles de colesterol de las personas con dislipidemia, prevención secundaria en personas con antecedentes de enfermedades cardiovasculares y pesquisar precozmente la enfermedad renal crónica en personas con factores de riesgo.",
+                    "imagen": "http://cesfam18.cl/wp-content/uploads/2018/01/ChileCrece.png"
+                },
+                {
+                    "ID": 5,
+                    "titulo": "PROGRAMA 5",
+                    "descrbreve": "Su objetivo es contribuir a elevar el nivel de salud mental de NNA y jóvenes de familias con alto riesgo psicosocial, asegurando su acceso, oportunidad y calidad de atención de salud...",
+                    "descrgeneral": "El Programa de salud cardiovascular se implementa en atención primaria de salud con el objetivo principal de reducir la incidencia de eventos cardiovasculares a través del control y compensación de los factores de riesgo cardiovascular. <br><br> Pertenecen a este programa las personas con hipertensión arterial, diabetes mellitus tipo 2, dislipidemia, tabaquismo, antecedentes personales de enfermedad cardiovascular aterosclerótica. <br><br>Sus objetivos son reducir el Riesgo Cardiovascular de las personas bajo control, fomentando estilos de vida saludables. Lograr el control de los factores de riesgo, alcanzando niveles de presión arterial óptimos, mejorar el control metabólico de las personas con diabetes, mejorar los niveles de colesterol de las personas con dislipidemia, prevención secundaria en personas con antecedentes de enfermedades cardiovasculares y pesquisar precozmente la enfermedad renal crónica en personas con factores de riesgo.",
+                    "imagen": "http://cesfam18.cl/wp-content/uploads/2018/01/ChileCrece.png"
+                },
+                {
+                    "ID": 6,
+                    "titulo": "PROGRAMA 6",
+                    "descrbreve": "Su objetivo es contribuir a elevar el nivel de salud mental de NNA y jóvenes de familias con alto riesgo psicosocial, asegurando su acceso, oportunidad y calidad de atención de salud...",
+                    "descrgeneral": "El Programa de salud cardiovascular se implementa en atención primaria de salud con el objetivo principal de reducir la incidencia de eventos cardiovasculares a través del control y compensación de los factores de riesgo cardiovascular. <br><br> Pertenecen a este programa las personas con hipertensión arterial, diabetes mellitus tipo 2, dislipidemia, tabaquismo, antecedentes personales de enfermedad cardiovascular aterosclerótica. <br><br>Sus objetivos son reducir el Riesgo Cardiovascular de las personas bajo control, fomentando estilos de vida saludables. Lograr el control de los factores de riesgo, alcanzando niveles de presión arterial óptimos, mejorar el control metabólico de las personas con diabetes, mejorar los niveles de colesterol de las personas con dislipidemia, prevención secundaria en personas con antecedentes de enfermedades cardiovasculares y pesquisar precozmente la enfermedad renal crónica en personas con factores de riesgo.",
+                    "imagen": "http://cesfam18.cl/wp-content/uploads/2018/01/ChileCrece.png"
+                }
+            ]
+
+
+        // console.log(json.Product);
+
+        // let buscar = 'PROGRAMA 5';
+        $('#list').pagination({ // you call the plugin
+            dataSource: json, // pass all the data
+            pageSize: 4, // put how many items per page you want
+            callback: function (data, pagination) {
+                var wrapper = $('#list .wrapper').empty();
+                $.each(data, function (i, f) {
+                    $('#list .wrapper').append('<ul><li>'+ data[i].titulo + '</li></ul>');
+                });
+            }
+        });
+
+        // function search(data, search) {
+        //     var obj = [], index = 0;
+        //     for (var i = 0; i < data.length; i++) {
+        //         for (key in data[i]) {
+        //             if (data[i][key].toString().toLowerCase().indexOf(search.toLowerCase()) != -1) {
+        //                 obj[index] = data[i];
+        //                 index++;
+        //                 break;
+        //             }
+        //         }
+        //         return obj;
+        //     }
+        // }
+    </script>
+</body>
+
+</html>
